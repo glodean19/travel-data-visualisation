@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel data visualisation</title>
+
+    <!-- Libraries -->
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Main sketch file -->
+    <script src="sketch.js"></script>
+
+    <!-- Main visualisation files -->
+    <script src="travel-spending.js"></script>
+    <script src="travel-reasons.js"></script>
+    <script src="travel-gap.js"></script>
+    <script src="travel-countries.js"></script>
+    <script src="https://unpkg.com/mappa-mundi@0.0.5/dist/mappa.js"type="text/javascript"></script>
+
+
+    <!-- Add extra scripts below -->
+    <script src="helper-functions.js"></script>
+    <script src="gallery.js"></script>
+    <script src="pie-chart.js"></script>
+  </head>
+  <body>
+    <div class="datavis">
+      <div class="datavis__menu">
+        <ul id="menu"></ul>
+      </div>
+      <div class="datavis__visual">
+        <div id="visual"></div>
+      </div>
+      <div id="map"></div>
+
+    </div>
+  </body>

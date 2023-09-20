@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(9, 42, 68);
+}
+
+.datavis {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem; /* The gap around the whole thing */
+}
+
+.datavis__menu {
+    padding-right: 2rem; /* The gap between the menu and the visual */
+}
+
+.datavis__menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 250px; /* The width of the menu */
+    background-color: slategray;
+}
+
+.datavis__menu li {
+    font-size: 1.2rem; /* The text size of the menu items */
+    color: rgb(5, 5, 5); /* The color of the text in the menu items */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem; /* The padding in the menu items */
+    cursor: pointer;
+    border-style: solid;
+    border-color: #000; /* The border color of menu items */
+    border-width: 1px 1px 0 1px;
+}
+
+.datavis__menu li:last-child {
+    border-bottom-width: 1px;
+}
+
+.datavis__menu li:hover {
+    background: rgb(214, 208, 208); /* The menu item hover color */
+}
+
+.datavis__menu li.selected,
+.datavis__menu li.selected:hover {
+    background: rgb(201, 171, 106); /* The selected menu item color */
+}
